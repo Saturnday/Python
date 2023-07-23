@@ -26,19 +26,18 @@ while True:
         break
 """
 
-#a tighter version + use it as a funcion
+#Pack it in to a function
 
 
 def main():
-    x=what_is_x(x)
+    x=what_is_x()
+    print(f"x={x}")
 
-    def what_is_x(x):
-        while True:
-            try:
-                print(int(input(f"x={x}")))
-            except ValueError: #Other syntax NameError
-                print("x is not int")
-            else:
-                return x
+def what_is_x():
+    while True:
+        try:
+            return int(input("what is x?"))
+        except ValueError: 
+            print("x is not int")
 main()
 
