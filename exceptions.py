@@ -41,3 +41,17 @@ def what_is_x():
             print("x is not int")
 main()
 
+#another way of doing it without prompting anything on the error:
+
+
+def main():
+    x=what_is_x()
+    print(f"x={x}")
+
+def what_is_x():
+    while True:
+        try:
+            return int(input("what is x?"))
+        except ValueError: 
+            pass
+main()
