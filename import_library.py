@@ -1,4 +1,4 @@
-"""
+
 some built-in libraries in the python
 
 import random
@@ -42,7 +42,7 @@ print("Hello, ", sys.argv[1])
 #sys.exit used ot exit the programm
 
 #using a for loop to eterate over a list, arg is a variable created on fly
-"""
+
 import sys
 if len(sys.argv)<2:
     sys.exit("too few args")
@@ -51,5 +51,8 @@ for arg in sys.argv:
 #take a slice of a list - take a subset of it
 #to take a slice: 
     #sys.argv[1:] - this will take a slice from 1, start at element 1, and go do the end, the second number is not nescessary
-for arg in sys.argv[1:]:
-    print("[Sliced]Hello, ", arg)
+import sys
+if len(sys.argv)<2:
+    sys.exit("too few args")
+for arg in sys.argv[1:]:#sliced
+    print("Hello, ", arg)
