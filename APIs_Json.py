@@ -7,8 +7,8 @@ https://docs.python.org/3/library/json.html
 
 pip install requests
 JSON - javascript object notation 
-
 """
+
 import requests
 import sys
 import json
@@ -21,3 +21,9 @@ response = requests.get("https://itunes.apple.com/search?entity=song&limit=50&te
 i = response.json()
 for result in i["results"]:
     print(result["trackName"])
+
+
+import requests
+
+response = requests.get('https://www.google.com')
+print(response.json)
