@@ -69,4 +69,50 @@ otherdict = [
     {"key1":"value1"},
     {"key2":"value2"}
 ]
+
+try:
+    x=int(input("what's x?"))
+except ValueError:
+    print("nope")
+
+def main():
+    print("x is", get_int())
+def get_int():
+    while True:
+        try:
+            return int(input("x=? "))
+        except ValueError:
+            print("x is not int")
+        
+
+main()
+
+x = input("??")
+
+match x:
+    case "1":
+        print('x=1')
+    case _:
+        print("blabla")
+
+def main():
+    square(3)
+
+def square(size):
+    for i in range(size):
+        for j in range(size):
+            print('#', end="")
+        print()
+main()
+
+
+x=input("what is x")
+match x:
+    case "2":
+        print("x=2")
+    case _:
+        print
+
 """
+x=list(range(1,6))
+print(x[1:-1])
