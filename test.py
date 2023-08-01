@@ -113,6 +113,19 @@ match x:
     case _:
         print
 
-"""
+
 x=list(range(1,6))
 print(x[1:-1])
+
+
+def main():
+    square(3)
+
+def square(size):
+    for i in range(size):
+        for j in range(size):
+            print("#", end="")
+        print()
+main()
+"""
+    
