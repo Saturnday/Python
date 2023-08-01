@@ -11,7 +11,7 @@ Use a for loop to iterate over a dictionary and print each key-value pair.
 """
 """
 
-all usless!!! doesn't work without subscribtion,401 error
+all usless!!! doesn't work without subscribtion 401 error
 
 """
 import sys
@@ -21,12 +21,12 @@ import requests
 def main():
     if len(sys.argv)!=2:   # Exit if a city name wasn't provided as a command line argument
         sys.exit()
-    find_city = requests.get("http://api.openweathermap.org/geo/1.0/direct?q="+sys.argv[1]+"&limit=5&appid=88afa02aa51073d5799354d2a8415e3d")
+    find_city = requests.get("http://api.openweathermap.org/geo/1.0/direct?q="+sys.argv[1]+"&limit=5&appid=token")
     i = find_city.json()
     if i:
         latitude = i[0]['lat']
         longitude = i[0]['lon']
-        thecity=requests.get("https://api.openweathermap.org/data/3.0/onecall?lat="+str(latitude)+"&lon="+str(longitude)+"&appid=88afa02aa51073d5799354d2a8415e3d")
+        thecity=requests.get("https://api.openweathermap.org/data/3.0/onecall?lat="+str(latitude)+"&lon="+str(longitude)+"&appid=token")
         thecity=thecity.json
         print(latitude)
         print(longitude)
@@ -40,7 +40,7 @@ main()
 if len(sys.argv)!=2:
     sys.exit()
 
-response = requests.get("https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={88afa02aa51073d5799354d2a8415e3d}")
+response = requests.get("https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={token}")
 print(response.json)
 
 """
