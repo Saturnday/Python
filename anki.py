@@ -71,7 +71,7 @@ print(name_of_dic['Key'])
 name = input("what's your name?")
 print(f"Hello, {name}")
 
-"""
+
 
 #create a file to soter the list in
 
@@ -80,3 +80,15 @@ name=input("what's your name?")
 file = open("names.txt", "w")
 file.write(name)
 file.close()
+
+match x:
+    case 1:
+        print()
+    case _:
+
+
+parameter.funciton(parameter2, key=lamnda, key:key['name'])
+
+"""
+
+__init__.py
