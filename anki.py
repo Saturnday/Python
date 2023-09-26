@@ -92,3 +92,22 @@ parameter.funciton(parameter2, key=lamnda, key:key['name'])
 """
 
 __init__.py
+
+Students = {}
+name=input("what's name")
+Students.append(name)
+{"key": value, "key"}
+student.append(students)
+
+sorted (students, key=lambda student:student['name'])
+print(f"{student['name'] is in )
+
+try:
+    assert square(3) == 9
+except:
+    print('square 3 is not 9')
+
+import sys
+sys.argv
+if len(sys.argv)<2:
+    sys.exit("")
