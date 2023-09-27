@@ -89,7 +89,7 @@ match x:
 
 parameter.funciton(parameter2, key=lamnda, key:key['name'])
 
-"""
+
 
 __init__.py
 
@@ -111,3 +111,8 @@ import sys
 sys.argv
 if len(sys.argv)<2:
     sys.exit("")
+    """
+csv.writer(file)
+csv.DictWriter
+
+``
