@@ -1,0 +1,18 @@
+"""
+import re
+name = input('whats the name  ').strip()
+
+i = re.search(r"^(.+), (.+)$",name)
+if i:
+    last, first = i.groups()
+    name  = f"{first} {last}"
+print(f"hello, {name}")
+
+"""
+import re
+name = input('whats the name  ').strip()
+
+i = re.search(r"^(.+), (.+)$",name)
+if i:
+    name = i.group(2) + " " + i.group(1)
+print(f"hello, {name}")
