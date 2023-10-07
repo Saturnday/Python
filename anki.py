@@ -111,8 +111,18 @@ import sys
 sys.argv
 if len(sys.argv)<2:
     sys.exit("")
-    """
+
 csv.writer(file)
 csv.DictWriter
+    """
+def main():
+    square(3)
 
-``
+def square(size):
+    size = 3
+    for i in range(size):
+         for j in range(size):
+              print('#', end="")
+         print()
+main()
+
